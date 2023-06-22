@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/SkillsWeb/static/css/main.44ad388e.css",
+    "main.js": "/SkillsWeb/static/js/main.c09fb8d8.js",
+    "static/media/carrousel2.png": "/SkillsWeb/static/media/carrousel2.bd88bd953fa8d9ab8f14.png",
+    "static/media/carrousel1.png": "/SkillsWeb/static/media/carrousel1.06101fcb6dc80a7b7e8d.png",
+    "static/media/carrousel3.png": "/SkillsWeb/static/media/carrousel3.36a60e24c6562443cb7e.png",
+    "static/media/imageAcademiaBanner.webp": "/SkillsWeb/static/media/imageAcademiaBanner.b01111b0afe06f2c790a.webp",
+    "static/media/logo.png": "/SkillsWeb/static/media/logo.a93a1eb76c0099b63bd2.png",
+    "static/media/imgContacto.webp": "/SkillsWeb/static/media/imgContacto.600f23429e74bdbcbf24.webp",
+    "static/media/academiaImage.jpg": "/SkillsWeb/static/media/academiaImage.5f6d041c5ed377836889.jpg",
+    "static/media/LogoFooter.png": "/SkillsWeb/static/media/LogoFooter.fb7b5b28e6d6a0a5910d.png",
+    "static/media/fraseAcademia.png": "/SkillsWeb/static/media/fraseAcademia.b9b33b0c5dd0438b2a4d.png",
+    "static/media/roboto-all-400-normal.woff": "/SkillsWeb/static/media/roboto-all-400-normal.c5d001fa922fa66a147f.woff",
+    "static/media/home_1.webp": "/SkillsWeb/static/media/home_1.4d58f3cfe1cc6d10421e.webp",
+    "static/media/home_2.webp": "/SkillsWeb/static/media/home_2.d1dd64c59f5a5c705715.webp",
+    "static/media/roboto-latin-400-normal.woff2": "/SkillsWeb/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
+    "static/media/roboto-cyrillic-ext-400-normal.woff2": "/SkillsWeb/static/media/roboto-cyrillic-ext-400-normal.804378952da8a10faae2.woff2",
+    "static/media/roboto-latin-ext-400-normal.woff2": "/SkillsWeb/static/media/roboto-latin-ext-400-normal.861b791f9de857a6e7bc.woff2",
+    "static/media/roboto-cyrillic-400-normal.woff2": "/SkillsWeb/static/media/roboto-cyrillic-400-normal.71a33b6b50457b2c903a.woff2",
+    "static/media/roboto-greek-400-normal.woff2": "/SkillsWeb/static/media/roboto-greek-400-normal.c35e4c3958e209d17b31.woff2",
+    "static/media/roboto-vietnamese-400-normal.woff2": "/SkillsWeb/static/media/roboto-vietnamese-400-normal.3230f9b040f3c630e0c3.woff2",
+    "static/media/roboto-greek-ext-400-normal.woff2": "/SkillsWeb/static/media/roboto-greek-ext-400-normal.169619821ea93019d1bb.woff2",
+    "index.html": "/SkillsWeb/index.html",
+    "main.44ad388e.css.map": "/SkillsWeb/static/css/main.44ad388e.css.map",
+    "main.c09fb8d8.js.map": "/SkillsWeb/static/js/main.c09fb8d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44ad388e.css",
+    "static/js/main.c09fb8d8.js"
+  ]
+}
