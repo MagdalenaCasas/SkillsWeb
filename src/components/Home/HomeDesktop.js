@@ -1,13 +1,12 @@
 import React from "react";
 import { Grid, GridItem, Text,Flex, Image,Link,Button } from '@chakra-ui/react'
-import home1 from "../../Imagenes/home_1.webp"
-import home2 from "../../Imagenes/home_2.webp"
+import home1 from "../../Imagenes/home_1.png"
+import home2 from "../../Imagenes/home_2.png"
 import CardCursosHome from "./CardCursos";
 import { useContext, useEffect,useState} from "react"
 import { AcademiaContext } from '../../context/context';
 import CarrouselContainer from "../Carrousel/CarrouselContainer";
 import { useMediaQuery } from '@chakra-ui/react'
-import { Cloudinary } from "@cloudinary/url-gen";
 
 
 
@@ -59,6 +58,7 @@ const url = "https://res.cloudinary.com/cloudinary://895165427322522:JLTxdNoO3tI
     fontSize={"46px"}
     margin={0}
     marginBottom={"2%"}
+    textAlign={"center"}
     >Nunca es tarde para empezar,<br></br> comenzá tu curso de inglés </Text>
 
     <Text

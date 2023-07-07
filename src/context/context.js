@@ -6,7 +6,22 @@ import clockIcon from "../Imagenes/clock.png";
 import ImagenCarrouselHome1 from "../Imagenes/carrousel1.png"
 import ImagenCarrouselHome2 from "../Imagenes/carrousel2.png"
 import ImagenCarrouselHome3 from "../Imagenes/carrousel3.png"
-
+import ImageCarrouselMobile1 from "../Imagenes/carrouselWeb1.png"
+import ImageCarrouselMobile2 from "../Imagenes/carrouselWeb2.png"
+import ImageCarrouselMobile3 from "../Imagenes/carrouselWeb33.png"
+import Kiddies from "../Imagenes/Kiddies2.png"
+import Kids from "../Imagenes/Kids2.png"
+import Olders from "../Imagenes/Olders2.png"
+import Seniors from "../Imagenes/Seniors2.png"
+import Intermidiate from "../Imagenes/Intermidiate2.png"
+import KiddiesMb from "../Imagenes/KiddiesMb.png"
+import KidsMb from "../Imagenes/KidsMb.png"
+import OldersMb from "../Imagenes/OldersMb.png"
+import SeniorsMb from "../Imagenes/SeniorsMb.png"
+import IntermidiateMb from "../Imagenes/IntermediateMb.png"
+import Preliminary from "../Imagenes/Preliminary.png"
+import PreFce from "../Imagenes/PreFce.png"
+import Fce from "../Imagenes/Fce.png"
 
 
 
@@ -255,24 +270,17 @@ const cursosAdultos = {
  const slideData = [
   {
     image: ImagenCarrouselHome1,
-    titulo:"Ciclo 2023",
-    texto: `7  y  8 de marzo`,
-    texto2: `comienzo de clases`
+    imageMobile:ImageCarrouselMobile1,
 
 
   },
   {
     image:ImagenCarrouselHome2,
-    titulo:"",
-    titulo2:"Exámenes Internacionales",
-    texto: "Te ayudamos y te preparamos para rendir"
+    imageMobile:ImageCarrouselMobile2,
   },
   {
       image:ImagenCarrouselHome3,
-      titulo:"",
-      titulo2: "Inglés para todas las edades",
-      texto3:" Niños, jóvenes y adultos",
-      texto: ""
+      imageMobile:ImageCarrouselMobile3,
   }
 ];
 
@@ -299,23 +307,28 @@ const Cursos=[
     cards:[
       { id: 1,
         titulo: "KIDDIES",
-        image:""
+        image:Kiddies,
+        imageMobile:KiddiesMb
       },
       { id: 2,
         titulo: "Kids 1, 2, 3 y 4",
-        image:""
+        image:Kids,
+        imageMobile:KidsMb
       },
       { id: 3,
         titulo: "Olders 1,2,3 y 4",
-        image:""
+        image:Olders,
+        imageMobile:OldersMb
       },
       { id: 4,
         titulo: "Seniors 1, 2 y 3",
-        image:""
+        image:Seniors,
+        imageMobile:SeniorsMb
       },
       { id: 5,
         titulo: "Intermediate",
-        image:""
+        image:Intermidiate,
+        imageMobile:IntermidiateMb
       },]
   },
   {
@@ -326,15 +339,18 @@ const Cursos=[
     cards:[
       { id: 1,
         titulo: "PRELIMINARY (B1)",
-        image:""
+        image:Preliminary,
+        imageMobile:""
       },
       { id: 2,
         titulo: "Pre FCE ( B1+)",
-        image:""
+        image:PreFce,
+        imageMobile:""
       },
       { id: 3,
         titulo: "FCE ( B2 )",
-        image:""
+        image:Fce,
+        imageMobile:""
       },
     ]
   },
@@ -349,30 +365,6 @@ const Cursos=[
 ]
 
 
-const cardCursos=[
-  { id: 1,
-    titulo: "KIDDIES",
-    image:""
-  },
-  { id: 2,
-    titulo: "Kids 1, 2, 3 y 4",
-    image:""
-  },
-  { id: 3,
-    titulo: "Olders 1,2,3 y 4",
-    image:""
-  },
-  { id: 4,
-    titulo: "Seniors 1, 2 y 3",
-    image:""
-  },
-  { id: 5,
-    titulo: "Intermediate",
-    image:""
-  },]
-
-
-
 
 
 
@@ -382,14 +374,16 @@ const cardCursos=[
   const infoExamenes ={
     id: 2,
     title: "Exámenes internacionales",
-    text: `Preparamos y ofrecemos a nuestro alumnado que rindan en diferentes instancias los exámenes de la Universidad de Cambrigde.Todos los cursos que ofrecemos en Skills se dictan de manera presencial`,
+    text: `Preparamos y ofrecemos a nuestro alumnado que rindan en diferentes instancias los exámenes de la Universidad de Cambrigde.Todos los cursos que ofrecemos en Skills se dictan de manera presencial.`,
+    text2:`El 95% de nuestros alumnos aprobaron los exámenes de Cambridge. Logramos en 3 hs lo que en otras instituciones necesitan en más horas de cursado.
+    Optimizamos el tiempo de nuestros alumnos y nuestro compromiso es ininterrumpido.`
   }
 
 
 
 
  return <AcademiaContext.Provider value={{titleFooter,datos, menuItem, 
- contact, verde, rojoTipografia, cursosAdolescentes, cursosAdultos,slideData,Cursos, infoExamenes, CarrouselData,cardCursos}}>
+ contact, verde, rojoTipografia, cursosAdolescentes, cursosAdultos,slideData,Cursos, infoExamenes, CarrouselData,}}>
                                            
     {children}
     </AcademiaContext.Provider>

@@ -1,7 +1,5 @@
 import React from 'react';
-import {  useEffect, useState} from "react";
 import { Flex, Text,Button, Link} from '@chakra-ui/react';
-import { useMediaQuery } from '@chakra-ui/react'
 
 
 
@@ -18,7 +16,7 @@ function CardCursosHome ({element}){
      margin={"10px"}
      >   
         <Text margin={"8%"} 
-        color={"#bb2423"} 
+        color={"white"} 
         fontWeight={"bold"}
         width={"80%"} 
         align={"center"}

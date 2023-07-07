@@ -10,6 +10,7 @@ const Examenes = () => {
       <Box
       w={"100%"}
       paddingTop={"20%"}
+      className="fade tipo"
       >
       <ExamenesResponsive></ExamenesResponsive>
       </Box>

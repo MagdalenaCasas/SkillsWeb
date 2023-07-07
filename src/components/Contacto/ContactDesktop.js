@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, GridItem, Text,Image,Box } from '@chakra-ui/react'
 import IframeFunction from "./Iframe"
-import imgContacto from "../../Imagenes/imgContacto.webp"
+import imgContacto from "../../Imagenes/imgContacto.png"
 import ContactCard from "./ContactCard";
 import FormularioPrueba from "../Form/Form";
 import { useContext} from "react"
@@ -16,13 +16,14 @@ const ContactCardContainer = () => {
     const {verde}= useContext(AcademiaContext);
     return(
     <Box
+    marginBottom={"15%"}
     >
     <Text
     align={"center"}
     fontSize={"46px"}
     margin={0}
     marginBottom={"1%"}
-    paddingTop={"15%"}
+    paddingTop={"20%"}
     >Para consultas, contactanos</Text>
     <Grid
 
@@ -34,16 +35,16 @@ const ContactCardContainer = () => {
 
      <GridItem h={"100vh"}>
      <Grid templateColumns='repeat(2, 1fr)' gap={6}>
-       <GridItem h={"50vh"}  backgroundColor={verde}>
+       <GridItem h={"55vh"}  backgroundColor={verde}>
         <ContactCard></ContactCard>
        </GridItem>
-       <GridItem h={"50vh"}>
+       <GridItem h={"55vh"}>
         <Image src={imgContacto} h={"100%"} w={"100%"}></Image>
         </GridItem>
-       <GridItem h={"50vh"}  align={"center"} >
+       <GridItem h={"55vh"}  align={"center"} >
           <IframeFunction></IframeFunction>
        </GridItem>
-       <GridItem h={"50vh"}  backgroundColor={"white"} > <FormularioPrueba></FormularioPrueba> </GridItem>
+       <GridItem h={"55vh"}  backgroundColor={"white"} > <FormularioPrueba></FormularioPrueba> </GridItem>
      </Grid>
       </GridItem>
 

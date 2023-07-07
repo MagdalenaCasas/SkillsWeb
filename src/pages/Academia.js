@@ -9,6 +9,7 @@ const Academia = () => {
      <Box
      w={"100%"}
      paddingTop={"20%"}
+     className="fade tipo"
      >
       <AcademiaResponsive></AcademiaResponsive>
      </Box>

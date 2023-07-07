@@ -71,6 +71,7 @@ const FormExamenes = () =>{
     return(    
         <Flex
         flexDirection={"column"}
+        marginBottom={"10%"}
         >
         <Formik
           validationSchema={validationSchema}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, GridItem, Text,Image,Box,Flex } from '@chakra-ui/react'
 import imgAcademia from "../../Imagenes/academiaImage.jpg"
-import banner from "../../Imagenes/imageAcademiaBanner.webp"
+import banner from "../../Imagenes/imageAcademiaBanner.png"
 import frase from "../../Imagenes/fraseAcademia.png"
 import { useContext} from "react"
 import { AcademiaContext } from '../../context/context';
@@ -28,7 +28,7 @@ const AcademiaDesktop = () => {
         w={"50%"}
         fontSize={"20px"}
         textAlign={"center"}
-        lineHeight={"25px"}
+        lineHeight={"35px"}
         >
         Skills ofrece cursos de inglés a niños desde la edad pre-escolar, adolescentes y adultos, con el compromiso de brindar a sus alumnos un acompañamiento personalizado. 
 
@@ -51,12 +51,16 @@ const AcademiaDesktop = () => {
           >
           <Text
           textAlign={"justify"}
+          fontSize={"20px"}
+          lineHeight={"35px"}
           >
          Skills ofrece cursos de inglés a niños desde la edad pre-escolar, adolescentes y adultos, con el compromiso de brindar a sus alumnos un acompañamiento personalizado.
 
           </Text>
           <Text
           textAlign={"justify"}
+          fontSize={"20px"}
+          lineHeight={"35px"}
           >
           Skills abrió sus puertas en marzo de 1997,y desde ese entonces  el instituto  se fue adaptando a las necesidades de sus alumnos.
           Nuestra misión en Skills es ofrecer cursos de inglés a niños de edad pre escolar, niños,  adolescentes y adultos, brindando a nuestros alumnos un acompañamiento personalizado para que ellos puedan alcanzar los objetivos propuestos.

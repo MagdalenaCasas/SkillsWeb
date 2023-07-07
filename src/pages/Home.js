@@ -6,7 +6,7 @@ const HomePage = () => {
 
   
     return (
-     <Box className="fade">
+     <Box className="fade tipo">
        <HomeResponsive></HomeResponsive>
      </Box>
     );

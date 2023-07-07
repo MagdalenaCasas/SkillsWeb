@@ -14,6 +14,7 @@ const CursosDesktop = () => {
         align={"center"}
         fontSize={"36px"}
         fontWeight={"bold"}
+        className="cursos"
         >Cursos Disponibles</Text>
 
         <CursosAdultos></CursosAdultos>

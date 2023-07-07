@@ -11,6 +11,7 @@ const Cursos = () => {
      <Box
      w={"100%"}
      paddingTop={"20%"}
+     className="cursos fade tipo"
      >
       <CursosDesktop></CursosDesktop>
      </Box>

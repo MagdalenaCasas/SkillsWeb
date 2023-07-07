@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { Grid, GridItem, Text,Image,Box,Flex } from '@chakra-ui/react'
 import imgAcademia from "../../Imagenes/academiaImage.jpg"
-import banner from "../../Imagenes/imageAcademiaBanner.webp"
-import frase from "../../Imagenes/fraseAcademia.png"
+import banner from "../../Imagenes/BannerAcademiaMobile.png"
+import frase from "../../Imagenes/fraseAcademiaMobile.png"
 import { useContext} from "react"
 import { AcademiaContext } from '../../context/context';
 import ValoresCardMobile from "./ValoresCardMobile"
@@ -100,7 +100,6 @@ const AcademiaMobile = () => {
 
          <Image 
          w={"100vw"}
-         h={"25vh"}
          src={frase}></Image>
          </Box>
 

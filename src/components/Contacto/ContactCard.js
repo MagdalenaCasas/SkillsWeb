@@ -22,7 +22,6 @@ function ContactCard (){
    color={"white"}
    margin={0}
    h={"10%"}
-   marginBottom={"5px"}
    marginTop={"5%"}
    backgroundColor={rojoTipografia}
    paddingTop={"10px"}
@@ -31,7 +30,7 @@ function ContactCard (){
      <Grid templateColumns='repeat( 1fr)' gap={0}>
       {contact.map(item =>{
         return( 
-        <GridItem w='100%' h='8vh' >
+        <GridItem w='100%' h='8vh'>
           <ItemBox element={item}></ItemBox>
         </GridItem>)
       })}
@@ -43,8 +42,8 @@ function ContactCard (){
    fontSize={"10px"}
    color={"white"}
    margin={0}
-   marginBottom={"5px"}
-   marginTop={"2%"}
+   marginBottom={"3%"}
+   marginTop={"5%"}
    >SEGUINOS EN NUESTRAS REDES</Text>
    <Text
    align={"center"}

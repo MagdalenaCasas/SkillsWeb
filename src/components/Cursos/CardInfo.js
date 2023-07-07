@@ -2,11 +2,12 @@ import React from "react";
 import { Text,Box,Flex,Image } from '@chakra-ui/react'
 import { useContext} from "react"
 import CardCursoMobile from "./CardCursoMobile";
-import imagen from "../../Imagenes/Intermediate.png";
+import CardCursos from "./CardCursos";
+import { useMediaQuery } from '@chakra-ui/react'
 import { AcademiaContext } from '../../context/context';
 const CardInfo = ({element,card}) => {
    /**Tiene la card que se llena desde el context con la info de los cursos(solo texto) */
-
+   const [isLargerThan600] = useMediaQuery('(min-width: 600px)')
     const {verde,Cursos}= useContext(AcademiaContext);
      let curso = card
      console.log(curso)
@@ -28,8 +29,9 @@ const CardInfo = ({element,card}) => {
       >{element.title}</Text>
 
       <Box
-      lineHeight={"2"}
+      lineHeight={"35px"}
       w={"90%"}
+      fontSize={"20px"}
       >
           {element.text}
       </Box>
@@ -41,9 +43,7 @@ const CardInfo = ({element,card}) => {
          >
           <Box
             w={"90%"}
-            h={"35vh"}
             padding={"5px"}
-            background={"#e1e1e1"}
           >
           <Flex
            justifyContent={"space-between"}
@@ -52,11 +52,16 @@ const CardInfo = ({element,card}) => {
            padding={"10px"}
           >
           {curso.map(e=>{
-          return(
-            <>
-            <CardCursoMobile element={e}></CardCursoMobile>
-            </>
-          )
+
+            if(isLargerThan600){
+             return(
+               <>
+               <CardCursos element={e}></CardCursos>
+               </>
+             )
+            }else{
+            return( <CardCursoMobile element={e}></CardCursoMobile>)
+             }
          })}
           </Flex>
             

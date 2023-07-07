@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, GridItem, Text,Flex, Image,Link,Button,Box } from '@chakra-ui/react'
-import home1 from "../../Imagenes/home_1.webp"
-import home2 from "../../Imagenes/home_2.webp"
+import home1 from "../../Imagenes/home_1.png"
+import home2 from "../../Imagenes/home_2.png"
 import CardCursosMobile from "./CardCursosMobile";
 import { useContext} from "react"
 import { AcademiaContext } from '../../context/context';
@@ -30,6 +30,7 @@ const HomeMobile = () => {
     margin={0}
     marginBottom={"2%"}
     lineHeight={"23px"}
+    textAlign={"center"}
     >Nunca es tarde para empezar,<br></br> comenzá tu curso de inglés </Text>
 
     <Text
