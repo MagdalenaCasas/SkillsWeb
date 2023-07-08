@@ -17,7 +17,7 @@ const CarrouselContainer = () => {
   if(isLargerThan600){
     return(
         <>
-      <Box width="100vw" p={4} color="white" marginTop={"12%"}>
+      <Box  w={"99,5vw"} p={4} color="white" marginTop={"13%"}>
          <ImageSlider slides={slideData} />
       </Box>
         </>
@@ -25,7 +25,7 @@ const CarrouselContainer = () => {
   }else{
     return(
       <>
-    <Box width="100vw" p={4} color="white" marginTop={"12%"}>
+    <Box  w={"100vw"} p={4} color="white" marginTop={"12%"}>
        <ImageSliderMobile slides={slideData}/>
     </Box>
       </>

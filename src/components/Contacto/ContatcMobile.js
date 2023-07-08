@@ -31,16 +31,13 @@ const ContactCardRes = () => {
   
        <GridItem>
        <Grid templateColumns='1fr' gap={6}>
-         <GridItem h={"70vh"}  backgroundColor={verde}>
+         <GridItem h={"50vh"}  backgroundColor={verde}>
           <ContactCard></ContactCard>
          </GridItem>
-         <GridItem h={"70vh"}>
-          <Image src={imgContacto} h={"100%"} w={"100%"}></Image>
-          </GridItem>
-         <GridItem h={"70vh"}  align={"center"} >
+         <GridItem h={"50vh"}  align={"center"} >
             <IframeFunction></IframeFunction>
          </GridItem>
-         <GridItem h={"70vh"}  backgroundColor={"white"} > <FormularioPrueba></FormularioPrueba> </GridItem>
+         <GridItem h={"50vh"}  backgroundColor={"white"} > <FormularioPrueba></FormularioPrueba> </GridItem>
        </Grid>
         </GridItem>
   

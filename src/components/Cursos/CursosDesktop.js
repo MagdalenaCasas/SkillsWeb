@@ -15,7 +15,7 @@ const CursosDesktop = () => {
         fontSize={"36px"}
         fontWeight={"bold"}
         className="cursos"
-        >Cursos Disponibles</Text>
+        >Cursos disponibles</Text>
 
         <CursosAdultos></CursosAdultos>
         </>

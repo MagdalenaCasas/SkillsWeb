@@ -4,7 +4,7 @@ import examsRojo from "../../Imagenes/ExamsRojo.png"
 import examsVerde from "../../Imagenes/ExamsVerde.png"
 
 
-const Card = ({element, direction}) => {
+const CardMobile = ({element, direction}) => {
   
 
      return(
@@ -22,24 +22,24 @@ const Card = ({element, direction}) => {
       >{element.title}</Text>
 
       <Box
-      lineHeight={"35px"}
-      w={"80%"}
-      fontSize={"20px"}
+      lineHeight={"25px"}
+      w={"100%"}
+      fontSize={"14px"}
       >
         {element.text}
       </Box>
       <Box
-      lineHeight={"35px"}
-      w={"80%"}
+      lineHeight={"25px"}
       mb={"3%"}
-      fontSize={"20px"}
+      w={"100%"}
+      fontSize={"14px"}
       >
         {element.text2}
       </Box>
       <Box
         w={"93%"}
-        h={"40vh"}
-        padding={"5px"}
+        padding={"20px"}
+        marginTop={"20px"}
         >
           <Flex
           justifyContent={"space-between"}
@@ -49,53 +49,51 @@ const Card = ({element, direction}) => {
           flexDirection={direction}
           >
           <Box
-           background={"#e1e1e1"}
+
            borderRadius={"25px"}
           >
             <Image src={examsRojo} w={"20vw"}></Image>
             <Text
             textAlign={"center"}
             fontWeight={"bold"}
-            fontSize={"30px"}
+            fontSize={"20px"}
             margin={0}
             marginBottom={"20px"}
             >FLYERS</Text>
           </Box>
           <Box
-          background={"#e1e1e1"}
           borderRadius={"25px"}
+          textAlign={"center"}
           >
             <Image src={examsVerde} w={"20vw"}></Image>
             <Text 
             textAlign={"center"}
             fontWeight={"bold"}
-            fontSize={"30px"}
+            fontSize={"20px"}
             margin={0}
             marginBottom={"20px"}
             >PRELIMINARY</Text>
           </Box>
           <Box
-           background={"#e1e1e1"}
            borderRadius={"25px"}
           >
             <Image src={examsRojo} w={"20vw"}></Image>
             <Text 
             textAlign={"center"}
             fontWeight={"bold"}
-            fontSize={"30px"}
+            fontSize={"20px"}
             margin={0}
             marginBottom={"20px"}
             >FCE</Text>
           </Box>
           <Box
-           background={"#e1e1e1"}
            borderRadius={"25px"}
           >
             <Image src={examsVerde} w={"20vw"}></Image>
             <Text 
             textAlign={"center"}
             fontWeight={"bold"}
-            fontSize={"30px"}
+            fontSize={"20px"}
             margin={0}
             marginBottom={"20px"}
             >IELTS</Text>
@@ -109,4 +107,4 @@ const Card = ({element, direction}) => {
     )
  
  };
-   export default Card;
+   export default CardMobile;

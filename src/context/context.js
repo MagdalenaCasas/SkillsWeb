@@ -5,7 +5,7 @@ import emailIcon from "../Imagenes/email.png";
 import clockIcon from "../Imagenes/clock.png";
 import ImagenCarrouselHome1 from "../Imagenes/carrousel1.png"
 import ImagenCarrouselHome2 from "../Imagenes/carrousel2.png"
-import ImagenCarrouselHome3 from "../Imagenes/carrousel3.png"
+import ImagenCarrouselHome3 from "../Imagenes/carrousel33.png"
 import ImageCarrouselMobile1 from "../Imagenes/carrouselWeb1.png"
 import ImageCarrouselMobile2 from "../Imagenes/carrouselWeb2.png"
 import ImageCarrouselMobile3 from "../Imagenes/carrouselWeb33.png"
@@ -13,15 +13,21 @@ import Kiddies from "../Imagenes/Kiddies2.png"
 import Kids from "../Imagenes/Kids2.png"
 import Olders from "../Imagenes/Olders2.png"
 import Seniors from "../Imagenes/Seniors2.png"
-import Intermidiate from "../Imagenes/Intermidiate2.png"
+import Intermidiate from "../Imagenes/Intermediate2.png"
 import KiddiesMb from "../Imagenes/KiddiesMb.png"
 import KidsMb from "../Imagenes/KidsMb.png"
 import OldersMb from "../Imagenes/OldersMb.png"
 import SeniorsMb from "../Imagenes/SeniorsMb.png"
 import IntermidiateMb from "../Imagenes/IntermediateMb.png"
 import Preliminary from "../Imagenes/Preliminary.png"
-import PreFce from "../Imagenes/PreFce.png"
+import PreliminaryMb from "../Imagenes/PreliminaryMb.png"
+import FlyersMb from "../Imagenes/FlyersMb.png"
 import Fce from "../Imagenes/Fce.png"
+import Ielts from "../Imagenes/Ielts.png"
+import Flyers from "../Imagenes/Flyers.png"
+import FceMb from "../Imagenes/FceMb.png"
+import IeltsMb from "../Imagenes/IeltsMb.png"
+
 
 
 
@@ -40,15 +46,15 @@ const titleFooter = [
           id :1,
           gridRow: "1",
           fontWeigth: "bold",
-          color: "#d27d7c",
+          color: "white",
           text: "NAVEGACIÓN RÁPIDA",
         },
         {
           id :2,
           gridRow: "1",
           fontWeigth: "bold",
-          color: "#d27d7c",
-          text: "CONÉCTATE",
+          color: "white",
+          text: "CONECTATE",
           
       
         },
@@ -56,8 +62,8 @@ const titleFooter = [
           id :3,
           gridRow: "1",
           fontWeigth: "bold",
-          color: "#d27d7c",
-          text: "CONTÁCTANOS",
+          color: "white",
+          text: "ENCONTRANOS",
           
       
         },
@@ -68,7 +74,7 @@ const datos = [
     gridRow: "2",
     textDecoration: "none",
     color: "white",
-    text: "Academia",
+    text: "¿Quiénes somos?",
     href: './academia'
   },
   {
@@ -94,7 +100,7 @@ const datos = [
     gridRow: "3",
     textDecoration: "none",
     color: "white",
-    text: "Examenes",
+    text: "Exámenes",
     href: './examenes'
   },
   {
@@ -183,7 +189,7 @@ const menuItem = [
     },
     { 
       id:2,
-      text: "Academia",
+      text: "¿Quiénes somos?",
       color: "white",
       textdecoration: "none",
       background: "none",
@@ -216,6 +222,15 @@ const menuItem = [
       textdecoration: "none",
       border: "none",
       href: "./contacto"
+    },
+    { 
+      id:6,
+      text: "Sumate al staff",
+      color: "white",
+      background: "none",
+      textdecoration: "none",
+      border: "none",
+      href: "https://forms.gle/8DdqiZSTjQaHsMHw7"
     }
 ]
 
@@ -230,21 +245,21 @@ const contact = [
   },
   {
     title: "WHATSAPP",
-    value: "3512003096",
+    value: "3512003096 - (0351) 4647387",
     color:"white",
     src: "whatsApp",
     img: whatsappIcon
   },
   {
     title: "HORARIOS",
-    value: "Durante el periodo escolar, las oficinas están abiertas desde",
+    value: "Desde febrero a diciembre, las oficinas están abiertas de 14:30hs a 19:00hs",
     color:"white",
     src: "horarios",
     img: clockIcon
   },
   {
     title: "DIRECCIÓN",
-    value: "Av. Elías Yofre 1079 y Paseo del Joackey Córdoba, Argentina.",
+    value: "Av. Elías Yofre 1079 y Paseo del Jockey Córdoba, Argentina.",
     color:"white",
     src: "direccion",
     img: locationIcon
@@ -254,19 +269,31 @@ const contact = [
 /** DATOS DEL HOME */
 const cursosAdultos = {
   title: "Cursos para adultos",
-  value: `Están pensados para alumnos de 18 años en adelante. Si los alumnos vienen con conocimientos previos del idioma se los evalúa para poder ubicarlos en el curso correcto.`,
+  value: `Nunca es tarde para empezar o retomar tus clases de inglés. Estos cursos están pensados para mayores de 18 años con o sin conocimiento previo.`,
   href:"#"
  }
 
  const cursosAdolescentes =
  {
    title: "Cursos para niños y adolescentes",
-   value: `Ofrecemos cursos de "Kiddies " para pre escolares y niños de 1er grado que aún no tienen la lecto escritura incorporada.
-   A partir de segundo grado, los niños pueden asistir a los cursos regulares
-   Los cursos se ofrecen de acuerdo a la edad y el conocimiento de los alumnos.`,
+   value: `Ofrecemos cursos a niños a partir de 2do grado. Los niños y adolescentes pueden asistir a los cursos regulares que
+   se ofrecen de acuerdo a la edad y el conocimiento de los alumnos.`,
    href:"#"
  
  }
+
+  const cursosKiddies =
+ {
+   title: "Cursos para Preescolares/Kiddies",
+   value: `Ofrecemos cursos de "Kiddies" para preescolares y niños de 1er grado que aún no tienen la lecto escritura incorporada.`,
+   href:"#"
+ 
+ }
+
+ 
+
+
+
  const slideData = [
   {
     image: ImagenCarrouselHome1,
@@ -300,9 +327,9 @@ const Cursos=[
   {
     id: 1,
     title: "Cursos regulares",
-    text: `Nuestros cursos se dictan dos veces por semana 1 hora y media cada clase. En esta hora y media se trabajan las 4 habilidades de la lengua: habla , comprensión oral, lectura y escritura.
+    text: `Estos cursos son para niños y adolescentes, y se dictan dos veces por semana, una hora y media cada clase. Durante el tiempo de cursado, trabajamos las cuatro habilidades de la lengua (habla, comprensión auditiva, lectura y escritura) y utilizamos herramientas tecnológicas para el dictado de clases.
 
-    Estos cursos son para niños/adolescentes. Durante el cursado se les brinda a los alumnos actividades introductorias a los exámenes para rendir en años posteriores. A partir de los 12 años aproximadamente, pueden rendir FLYERS.
+     A su vez, le brindamos a nuestros alumnos la posibilidad de rendir exámenes de la universidad de Cambridge.
     `,
     cards:[
       { id: 1,
@@ -333,31 +360,37 @@ const Cursos=[
   },
   {
     id: 2,
-    title: "Cursos Especiales",
-    text: `Estos cursos son para alumnos de entre 14 a 17 años de edad aproximadamente. La carga horaria en aula es de 3 horas semanales divididas en una hora y media dos días a la semana. Durante el cursado, se prepara a los alumnos para rendir algún examen internacional, ya sea PET o FCE o algún otro similar.
+    title: "Cursos especiales",
+    text: `Estos cursos son para alumnos entre 14 y 18 años de edad aproximadamente. La carga horaria de estos cursos es de tres horas semanales divididas en una hora y media, dos días a la semana. Durante el cursado, preparamos a nuestros alumnos para rendir exámenes de la universidad de Cambridge.
     `,
     cards:[
       { id: 1,
-        titulo: "PRELIMINARY (B1)",
-        image:Preliminary,
-        imageMobile:""
+        titulo: "FLYERS",
+        image:Flyers,
+        imageMobile:FlyersMb
       },
       { id: 2,
-        titulo: "Pre FCE ( B1+)",
-        image:PreFce,
-        imageMobile:""
+        titulo: "PRELIMINARY (B1)",
+        image:Preliminary,
+        imageMobile:PreliminaryMb
       },
       { id: 3,
         titulo: "FCE ( B2 )",
         image:Fce,
-        imageMobile:""
+        imageMobile:FceMb
+      },
+      { id: 4,
+        titulo: "Ielts",
+        image:Ielts,
+        imageMobile:IeltsMb 
       },
     ]
   },
   {
     id: 3,
     title: "Cursos para adultos",
-    text: ` En estos cursos no se prepara a los alumnos para ningún examen internacional y están pensados para alumnos de 18 años en adelante. La carga horaria en el aula es de 2 horas semanales en un mismo día.
+    text: ` Nunca es tarde para empezar. Estos cursos están pensados para alumnos de 18 años en adelante que quieran aprender o mejorar sus habilidades de inglés. Se dictan una vez por semana y cada clase tiene una duración de dos horas.
+    Contamos con diferentes cursos tales como: básico, pre-intermedio, intermedio y cursos internacionales.
     `,
     cards:[]
   }
@@ -374,16 +407,16 @@ const Cursos=[
   const infoExamenes ={
     id: 2,
     title: "Exámenes internacionales",
-    text: `Preparamos y ofrecemos a nuestro alumnado que rindan en diferentes instancias los exámenes de la Universidad de Cambrigde.Todos los cursos que ofrecemos en Skills se dictan de manera presencial.`,
-    text2:`El 95% de nuestros alumnos aprobaron los exámenes de Cambridge. Logramos en 3 hs lo que en otras instituciones necesitan en más horas de cursado.
-    Optimizamos el tiempo de nuestros alumnos y nuestro compromiso es ininterrumpido.`
+    text: `Preparamos y ofrecemos a nuestro alumnado la posibilidad de rendir en diferentes instancias los exámenes de la Universidad de Cambridge. Optimizamos el tiempo de nuestros alumnos y nuestro compromiso es ininterrumpido.`,
+    text2:`Destacamos el empeño del alumnado y de los docentes, que han logrado en diferentes años, los mejores resultados. Un total del 95% de nuestros alumnos han aprobado los exámenes de Cambridge, alguno incluso obteniendo los resultados más altos y siendo destacados por la universidad.
+    `
   }
 
 
 
 
  return <AcademiaContext.Provider value={{titleFooter,datos, menuItem, 
- contact, verde, rojoTipografia, cursosAdolescentes, cursosAdultos,slideData,Cursos, infoExamenes, CarrouselData,}}>
+ contact, verde, rojoTipografia, cursosAdolescentes, cursosAdultos,cursosKiddies,slideData,Cursos, infoExamenes, CarrouselData,}}>
                                            
     {children}
     </AcademiaContext.Provider>

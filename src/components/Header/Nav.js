@@ -5,6 +5,7 @@ import { useMediaQuery } from '@chakra-ui/react'
 import {
     ListItem,
     UnorderedList,
+    Flex
 } from '@chakra-ui/react'
 import MenuHamburguesa from './Menu';
 import "@fontsource/roboto"
@@ -21,16 +22,22 @@ function Nav(){
         <UnorderedList
         listStyleType={"none"}
         display={"flex"}
-        justifyContent={"center"}
         background={"black"}
         height={"7vh"}
-        width={"100%"}
-        alignItems={"center"}
+        w={"100vw"}
         paddingInlineStart={"0"}
         marginBlock={"0"}
         marginLeft={"0"}
-        fontFamily={"roboto"}
+        alignItems={"center"}
+        justifyContent={"center"}
         >
+          <Flex
+          height={"7vh"}
+          alignItems={"center"}
+          marginLeft={"5%"}
+          w={"90vw"}
+          >
+
                {menuItem.map(item=>{return(
                  
                  <ListItem 
@@ -42,6 +49,7 @@ function Nav(){
                  _hover={{ fontWeight: 'semibold',color:"#bb2423" }}
                  >{item.text}</ListItem>
           )})} 
+          </Flex>
                
          </UnorderedList> 
    

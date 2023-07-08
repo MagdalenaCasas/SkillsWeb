@@ -36,7 +36,7 @@ function ValoresCard (){
     alignSelf={"center"}
     textAlign={"center"}
    >
-    Nuestro objetivo principal es que Skills sea reconocido por nuestra trayectoria, nivel académico y por sobre todo por el trato cálido y personalizado con cada alumno. 
+    Nuestro objetivo principal es ser reconocidos por nuestra trayectoria, nivel académico y por sobre todo, por el trato cálido y personalizado con cada alumno. 
 
     </Text>
    <Box
@@ -53,37 +53,16 @@ function ValoresCard (){
     margin={0}
     fontSize={"20px"}
     fontWeight={"bold"}
-    marginBottom={"5%"}
+    marginBottom={"10%"}
+    lineHeight={"60px"}
     >
-    Skills es una institución que contiene.
-    </Text>
-    <Text
-        margin={0}
-        fontSize={"20px"}
-        fontWeight={"bold"}
-        marginBottom={"5%"}
- 
-    >
-    Skills es una institución solidaria.
-    </Text>
-    <Text
-       margin={0}
-       fontSize={"20px"}
-       fontWeight={"bold"}
-       marginBottom={"5%"}
-    >
-
-    Skills es formador de personas.
-    </Text>
-    <Text
-       margin={0}
-       fontSize={"20px"}
-       fontWeight={"bold"}
-       marginBottom={"5%"}
-    >
-
+    Skills es una institución que contiene.<br></br>
+    Skills es una institución solidaria.<br></br>
+    Skills es formador de personas.<br></br>
+    Skills capacita a sus colaboradores <br></br>
     Skills es familia.
     </Text>
+    
 
    </Box>
 

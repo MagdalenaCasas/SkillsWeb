@@ -1,16 +1,29 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Text,Box,Flex,Image } from '@chakra-ui/react'
-import { useContext} from "react"
 import CardCursoMobile from "./CardCursoMobile";
 import CardCursos from "./CardCursos";
 import { useMediaQuery } from '@chakra-ui/react'
-import { AcademiaContext } from '../../context/context';
 const CardInfo = ({element,card}) => {
    /**Tiene la card que se llena desde el context con la info de los cursos(solo texto) */
    const [isLargerThan600] = useMediaQuery('(min-width: 600px)')
-    const {verde,Cursos}= useContext(AcademiaContext);
+   const [fontsize, setFontsize] =useState("")
+   const [title, settitle] =useState("")
+   const [lineHeight, setLineheigth] =useState("")
+
      let curso = card
      console.log(curso)
+     useEffect(() => {
+       if(isLargerThan600){
+         setFontsize("20px")
+         settitle("30px")
+         setLineheigth("35px")
+       }else{
+          setFontsize("14px")
+          settitle("20px")
+          setLineheigth("25px")
+        }
+     
+    },[]);
 
 
     return(
@@ -23,17 +36,18 @@ const CardInfo = ({element,card}) => {
       marginBottom={"20px"}
       >
       <Text
-      fontSize={"36px"}
+      fontSize={title}
       fontWeight={"bold"}
       w={"90%"}
+      marginLeft={"10%"}
       >{element.title}</Text>
 
       <Box
-      lineHeight={"35px"}
-      w={"90%"}
-      fontSize={"20px"}
+      lineHeight={lineHeight}
+      w={"80%"}
+      fontSize={fontsize}
       >
-          {element.text}
+      {element.text}
       </Box>
 
       </Flex>
@@ -43,7 +57,6 @@ const CardInfo = ({element,card}) => {
          >
           <Box
             w={"90%"}
-            padding={"5px"}
           >
           <Flex
            justifyContent={"space-between"}
@@ -56,6 +69,7 @@ const CardInfo = ({element,card}) => {
             if(isLargerThan600){
              return(
                <>
+                
                <CardCursos element={e}></CardCursos>
                </>
              )

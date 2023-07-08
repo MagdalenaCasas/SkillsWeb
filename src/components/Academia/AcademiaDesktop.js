@@ -19,7 +19,7 @@ const AcademiaDesktop = () => {
         align={"center"}
         fontSize={"36px"}
         fontWeight={"bold"}
-        >Nuestra Academia</Text>
+        >¿Quiénes somos?</Text>
 
         <Box
         align={"center"}
@@ -30,8 +30,7 @@ const AcademiaDesktop = () => {
         textAlign={"center"}
         lineHeight={"35px"}
         >
-        Skills ofrece cursos de inglés a niños desde la edad pre-escolar, adolescentes y adultos, con el compromiso de brindar a sus alumnos un acompañamiento personalizado. 
-
+         En Skills ofrecemos cursos de inglés a niños desde edad preescolar hasta adultos, con el compromiso de brindar a nuestros alumnos un acompañamiento personalizado. 
         </Text>
         </Box>
         <Box
@@ -49,21 +48,16 @@ const AcademiaDesktop = () => {
           w={"90%"}
           lineHeight={"23px"}
           >
-          <Text
-          textAlign={"justify"}
-          fontSize={"20px"}
-          lineHeight={"35px"}
-          >
-         Skills ofrece cursos de inglés a niños desde la edad pre-escolar, adolescentes y adultos, con el compromiso de brindar a sus alumnos un acompañamiento personalizado.
 
-          </Text>
           <Text
           textAlign={"justify"}
           fontSize={"20px"}
           lineHeight={"35px"}
           >
-          Skills abrió sus puertas en marzo de 1997,y desde ese entonces  el instituto  se fue adaptando a las necesidades de sus alumnos.
-          Nuestra misión en Skills es ofrecer cursos de inglés a niños de edad pre escolar, niños,  adolescentes y adultos, brindando a nuestros alumnos un acompañamiento personalizado para que ellos puedan alcanzar los objetivos propuestos.
+          Abrimos nuestras puertas por primera vez en marzo de 1997, y desde ese entonces hemos acompañado a mas de 5000 alumnos en su proceso de aprendizaje, adaptandonos a las necesidades y los tiempos actuales.
+          <br></br>
+          Estamos en búsqueda constante de ofrecer una mejor calidad educativa. Nuestra misión en Skills es ofrecerte las herramientas y el acompañamiento en el proceso de aprendizaje para que puedas cumplir los objetivos que te propongas.
+
           
           </Text>
 
@@ -83,11 +77,11 @@ const AcademiaDesktop = () => {
          <GridItem>
 
          <Grid templateColumns='repeat(2, 1fr)' >
-           <GridItem  backgroundColor={verde}>
-            <ValoresCard></ValoresCard>
+           <GridItem  backgroundColor={verde}  h={"90%"}>
+            <ValoresCard ></ValoresCard>
            </GridItem>
            <GridItem >
-            <Image src={imgAcademia} h={"100%"} w={"100%"}></Image>
+            <Image src={imgAcademia} h={"90%"} w={"90%"}></Image>
             </GridItem>
          </Grid>
          

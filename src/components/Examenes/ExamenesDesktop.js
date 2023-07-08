@@ -6,7 +6,7 @@ import Card from "./Card"
 
 import FormExamenes from "../Form/FormExamenes";
 const ExamenesDesktop = () => {
-  
+  const direction ="row"
   const {infoExamenes}= useContext(AcademiaContext);
 
     return(
@@ -17,7 +17,7 @@ const ExamenesDesktop = () => {
         >
           <Box
           >
-            <Card element={infoExamenes}></Card>
+            <Card element={infoExamenes} direction={direction}></Card>
 
           </Box>
         </Flex>

@@ -3,7 +3,7 @@ import { Box, Flex } from '@chakra-ui/react'
 import { useContext} from "react"
 import { AcademiaContext } from '../../context/context';
 import FormExamenesMobile from "../Form/FormExamenesMobile";
-import Card from "./Card"
+import CardMobile from "./CardMobile";
 
 
 
@@ -12,15 +12,16 @@ const ExamenesMobile = () => {
    /** ESTA FUCION TIENE EL GRID CON LOS CUADRADOS VERDES Y BLANCOS */
    /** VERSION DESKTOP DE LA PAGINA DE ACADEMIA */
    const {infoExamenes}= useContext(AcademiaContext);
+   const direction ="column"
     return(
       <>
         <Flex
         justifyContent={"center"}
         >
           <Box
-          w={"60%"}
+          w={"90%"}
           >
-           <Card element={infoExamenes}></Card>
+           <CardMobile element={infoExamenes}direction={direction}></CardMobile>
           </Box>
         </Flex>
       <FormExamenesMobile></FormExamenesMobile>

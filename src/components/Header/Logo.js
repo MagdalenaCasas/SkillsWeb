@@ -16,6 +16,7 @@ function Logo (){
    justifyContent={"space-between"}
    alignContent={"center"}
     background={"white"}
+    w={"100vw"}
    >
       <Flex></Flex>
        <Image src={logotipo} width={"200px"} height={"100px"} ></Image>

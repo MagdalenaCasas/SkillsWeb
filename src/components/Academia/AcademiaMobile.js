@@ -21,7 +21,7 @@ const AcademiaMobile = () => {
        fontSize={"30px"}
        fontWeight={"bold"}
 
-       >Nuestra Academia</Text>
+       >¿Quiénes somos?</Text>
 
        <Box
        align={"center"}
@@ -32,7 +32,7 @@ const AcademiaMobile = () => {
        textAlign={"center"}
        lineHeight={"25px"}
        >
-       Skills ofrece cursos de inglés a niños desde la edad pre-escolar, adolescentes y adultos, con el compromiso de brindar a sus alumnos un acompañamiento personalizado. 
+       En Skills ofrecemos cursos de inglés a niños desde edad preescolar hasta adultos, con el compromiso de brindar a nuestros alumnos un acompañamiento personalizado. 
 
        </Text>
        </Box>
@@ -53,13 +53,9 @@ const AcademiaMobile = () => {
          fontSize={"12px"}
          >
          <Text>
-        Skills ofrece cursos de inglés a niños desde la edad pre-escolar, adolescentes y adultos, con el compromiso de brindar a sus alumnos un acompañamiento personalizado.
-
-         </Text>
-         <Text>
-         Skills abrió sus puertas en marzo de 1997,y desde ese entonces  el instituto  se fue adaptando a las necesidades de sus alumnos.
-         Nuestra misión en Skills es ofrecer cursos de inglés a niños de edad pre escolar, niños,  adolescentes y adultos, brindando a nuestros alumnos un acompañamiento personalizado para que ellos puedan alcanzar los objetivos propuestos.
-         
+         Abrimos nuestras puertas por primera vez en marzo de 1997, y desde ese entonces hemos acompañado a mas de 5000 alumnos en su proceso de aprendizaje, adaptandonos a las necesidades y los tiempos actuales.
+          <br></br>
+          Estamos en búsqueda constante de ofrecer una mejor calidad educativa. Nuestra misión en Skills es ofrecerte las herramientas y el acompañamiento en el proceso de aprendizaje para que puedas cumplir los objetivos que te propongas.
          </Text>
 
 

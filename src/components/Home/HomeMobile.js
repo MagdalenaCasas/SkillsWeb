@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, GridItem, Text,Flex, Image,Link,Button,Box } from '@chakra-ui/react'
 import home1 from "../../Imagenes/home_1.png"
 import home2 from "../../Imagenes/home_2.png"
+import home3 from "../../Imagenes/home_3.png"
 import CardCursosMobile from "./CardCursosMobile";
 import { useContext} from "react"
 import { AcademiaContext } from '../../context/context';
@@ -12,7 +13,7 @@ import CarrouselContainer from "../Carrousel/CarrouselContainer";
 const HomeMobile = () => {
   /** ESTA FUCION TIENE EL GRID CON LOS CUADRADOS VERDES Y BLANCOS DE HOME */
   /** VERSION MOBILE DEL HOME */
-  const {cursosAdolescentes, cursosAdultos, verde}= useContext(AcademiaContext);
+  const {cursosAdolescentes, cursosAdultos, verde, cursosKiddies}= useContext(AcademiaContext);
 
 
     return(
@@ -40,7 +41,7 @@ const HomeMobile = () => {
     w={"90%"}
     lineHeight={"23px"}
     textAlign={"center"}
-    >Aprendé inglés, el idioma más hablado en el mundo.</Text>
+    >Aprendé inglés, el idioma del mundo.</Text>
 
     </Flex>
     <Grid 
@@ -51,18 +52,17 @@ const HomeMobile = () => {
 
      <GridItem >
      <Grid templateColumns='1fr' gap={6}>
-       <GridItem h={"55vh"}  backgroundColor={"gray"}>
-        <Image src={home1} w={"100%"} h={"100%"}></Image>
+
+
+     <GridItem h={"40vh"} backgroundColor={verde} >
+       <CardCursosMobile element={cursosKiddies}></CardCursosMobile>
        </GridItem>
-       <GridItem h={"55vh"} backgroundColor={verde} >
+       <GridItem h={"40vh"} backgroundColor={verde} >
         <CardCursosMobile element={cursosAdolescentes}></CardCursosMobile>
         </GridItem>
-       <GridItem h={"55vh"} backgroundColor={verde} >
+       <GridItem h={"40vh"} backgroundColor={verde} >
        <CardCursosMobile element={cursosAdultos}></CardCursosMobile>
        </GridItem>
-       <GridItem h={"55vh"}  backgroundColor={"gray"} >
-       <Image src={home2} w={"100%"} h={"100%"}></Image>
-        </GridItem>
      </Grid>
       </GridItem>
 
