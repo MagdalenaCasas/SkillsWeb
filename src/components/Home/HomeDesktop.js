@@ -1,13 +1,15 @@
 import React from "react";
-import { Grid, GridItem, Text,Flex, Image,Link,Button } from '@chakra-ui/react'
+import { Grid, GridItem, Text,Flex, Image} from '@chakra-ui/react'
 import home1 from "../../Imagenes/home_1.png"
 import home2 from "../../Imagenes/home_2.png"
 import home3 from "../../Imagenes/home_3.png"
+import whatsApp from "../../Imagenes/whatsapp.png"
 import CardCursosHome from "./CardCursos";
 import { useContext, useEffect,useState} from "react"
 import { AcademiaContext } from '../../context/context';
 import CarrouselContainer from "../Carrousel/CarrouselContainer";
 import { useMediaQuery } from '@chakra-ui/react'
+import Boton from "../SIn Uso/Button";
 
 
 
@@ -18,15 +20,7 @@ const HomeContainer = () => {
   const {cursosAdolescentes, cursosAdultos, verde, cursosKiddies}= useContext(AcademiaContext);
   const [isLargerThan650] = useMediaQuery('(min-width: 650px)')
   const [height, setHeigth] = useState("")
-  // This SDK requires imports from @cloudinary/url-gen. Learn more in the SDK docs.
-
-// Create a Cloudinary instance, setting some Cloud and URL configuration parameters.
-const url = "https://res.cloudinary.com/cloudinary://895165427322522:JLTxdNoO3tIiL88UWmcAcF5tgIE@djn959kbs/Skills/fetch"
-
-
-// This creates a URL of the form: https://www.example.com/demo/image/upload/sample
-
-
+  
   useEffect(() => {
     if(isLargerThan650){
        setHeigth("60vh")
@@ -36,16 +30,23 @@ const url = "https://res.cloudinary.com/cloudinary://895165427322522:JLTxdNoO3tI
  }, [isLargerThan650]);
 
    
-    return(
-    <>
-      <Flex
+ return(
+   <>
+    <Flex
      w={"100%"}
      padding={"0"}
      justifyContent={"center"}
      marginBottom={"10px"}
      flexDirection={"column"}
      >
+
+
+   
      <CarrouselContainer></CarrouselContainer>
+       
+     <Boton className={"botonWp"} image={whatsApp} link={'https://wa.me/message/6UZBQXQCSJLVD1'} ></Boton>
+
+
 
      </Flex>
     <Flex
@@ -67,6 +68,8 @@ const url = "https://res.cloudinary.com/cloudinary://895165427322522:JLTxdNoO3tI
     fontSize={"20px"}
     >Aprendé inglés, el idioma del mundo.</Text>
     </Flex>
+
+
     <Grid 
     templateColumns='5% 90% 5%'
     padding={"5%"}

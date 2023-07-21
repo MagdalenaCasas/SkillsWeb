@@ -21,7 +21,6 @@ function IframeFunction (){
             position="relative"
             referrerpolicy="no-referrer-when-downgrade"
             loading="lazy"
-            style="border:0;"
             />
 
         </Flex>

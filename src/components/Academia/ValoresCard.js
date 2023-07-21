@@ -6,7 +6,7 @@ import { AcademiaContext } from '../../context/context';
 
 function ValoresCard (){
  /** ESTA FUNCION TIENE EL CUADRADO VERDE DE LOS DATOS DE CONTACTANOS */
-  const {contact, rojoTipografia}= useContext(AcademiaContext);
+  const {rojoTipografia}= useContext(AcademiaContext);
 
   return(
    <Flex

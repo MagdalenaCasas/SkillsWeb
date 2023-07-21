@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { Text,Box,Flex,Image } from '@chakra-ui/react'
+import { Text,Box,Flex} from '@chakra-ui/react'
 import CardCursoMobile from "./CardCursoMobile";
 import CardCursos from "./CardCursos";
 import { useMediaQuery } from '@chakra-ui/react'
@@ -11,7 +11,6 @@ const CardInfo = ({element,card}) => {
    const [lineHeight, setLineheigth] =useState("")
 
      let curso = card
-     console.log(curso)
      useEffect(() => {
        if(isLargerThan600){
          setFontsize("20px")
@@ -23,7 +22,7 @@ const CardInfo = ({element,card}) => {
           setLineheigth("25px")
         }
      
-    },[]);
+    },[isLargerThan600]);
 
 
     return(
@@ -70,11 +69,11 @@ const CardInfo = ({element,card}) => {
              return(
                <>
                 
-               <CardCursos element={e}></CardCursos>
+               <CardCursos element={e} key={e.id}></CardCursos>
                </>
              )
             }else{
-            return( <CardCursoMobile element={e}></CardCursoMobile>)
+            return( <CardCursoMobile element={e} key={e.id}></CardCursoMobile>)
              }
          })}
           </Flex>

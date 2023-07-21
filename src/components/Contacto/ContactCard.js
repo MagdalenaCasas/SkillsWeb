@@ -31,7 +31,7 @@ function ContactCard (){
       {contact.map(item =>{
         return( 
         <GridItem w='100%' h='8vh'>
-          <ItemBox element={item}></ItemBox>
+          <ItemBox element={item} key={item.id}></ItemBox>
         </GridItem>)
       })}
     </Grid>

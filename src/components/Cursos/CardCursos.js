@@ -1,10 +1,9 @@
 import React from "react";
-import { Box, Text,Flex, Image } from '@chakra-ui/react'
-import { useContext} from "react"
-import { AcademiaContext } from '../../context/context';
+import { Image } from '@chakra-ui/react'
+
 const CardCursos = ({element}) => {
     /** ESTA ES LA CARD QUE SE ARMA DENTRO DE LA BOX GRIS */
-    const {verde,}= useContext(AcademiaContext);
+
     return(
 
         <>

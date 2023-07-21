@@ -84,8 +84,8 @@ const FormExamenesMobile = () =>{
                   message: values.message
               }
               console.log(valores)
-              //setLoading(true)
-              //sendEmail();
+              setLoading(true)
+              sendEmail();
           }}
         >
           {() => (

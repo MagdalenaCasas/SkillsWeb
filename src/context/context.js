@@ -1,4 +1,4 @@
-import { createContext, useState} from "react";
+import { createContext} from "react";
 import whatsappIcon from "../Imagenes/whatsapp.png";
 import locationIcon from "../Imagenes/location.png";
 import emailIcon from "../Imagenes/email.png";
@@ -37,7 +37,7 @@ export const AcademiaContextProvider = ({children})=>{
 
 const verde = "#00522e"
 const rojoTipografia= "#bb2423"
-const [carrousel, setCarrousel] = useState([]);
+
 
 
 /** DATOS DEL FOOTER */
@@ -75,7 +75,8 @@ const datos = [
     textDecoration: "none",
     color: "white",
     text: "¿Quiénes somos?",
-    href: './academia'
+    href: './academia',
+    target: ''
   },
   {
     id :2,
@@ -83,7 +84,8 @@ const datos = [
     textDecoration: "none",
     color: "white",
     text: "Facebook",
-    href: 'https://www.facebook.com/Skillsinstitute'
+    href: 'https://www.facebook.com/Skillsinstitute',
+    target: '_blank'
 
   },
   {
@@ -92,7 +94,8 @@ const datos = [
     textDecoration: "none",
     color: "white",
     text: "Av Elías Yofre 1079",
-    href: '#'
+    href: '#',
+    target: ''
 
   },
   {
@@ -101,7 +104,8 @@ const datos = [
     textDecoration: "none",
     color: "white",
     text: "Exámenes",
-    href: './examenes'
+    href: './examenes',
+    target: ''
   },
   {
     id :5,
@@ -109,7 +113,8 @@ const datos = [
     textDecoration: "none",
     color: "white",
     text: "WhatsApp",
-    href: 'https://wa.me/message/6UZBQXQCSJLVD1'
+    href: 'https://wa.me/message/6UZBQXQCSJLVD1',
+    target: '_blank'
 
   },
   {
@@ -118,7 +123,8 @@ const datos = [
     textDecoration: "none",
     color: "white",
     text: "Paseo del Jockey",
-    href: '#'
+    href: '#',
+    target: ''
 
   },
   {
@@ -126,8 +132,9 @@ const datos = [
     gridRow: "4",
     textDecoration: "none",
     color: "white",
-    text: "Noticias",
-    href: '#'
+    text: "Cursos",
+    href: './cursos',
+    target: ''
   },
   {
     id :8,
@@ -135,7 +142,8 @@ const datos = [
     textDecoration: "none",
     color: "white",
     text: "Instagram",
-    href: 'https://www.instagram.com/skillsenglishinstitute/'
+    href: 'https://www.instagram.com/skillsenglishinstitute/',
+    target: '_blank'
 
   },
   {
@@ -144,7 +152,8 @@ const datos = [
     textDecoration: "none",
     color: "white",
     text: "Córdoba, Argentina",
-    href: '#'
+    href: '#',
+    target: ''
 
   },
   {
@@ -153,15 +162,17 @@ const datos = [
     textDecoration: "none",
     color: "white",
     text: "Contacto",
-    href: './contacto'
+    href: './contacto',
+    target: ''
   },
   {
     id :11,
     gridRow: "5",
     textDecoration: "none",
     color: "white",
-    text: "",
-    href: '#'
+    text: "LinkedIn",
+    href: 'https://www.linkedin.com/company/skillsenglishinstitute/',
+    target: '_blank'
 
   },
   {
@@ -170,7 +181,8 @@ const datos = [
     textDecoration: "none",
     color: "white",
     text: "skills@skillsedu.com.ar",
-    href: '#'
+    href: '#',
+    target: ''
 
   }
 ]
@@ -290,34 +302,23 @@ const cursosAdultos = {
  
  }
 
- 
-
-
-
  const slideData = [
   {
+    id:1,
     image: ImagenCarrouselHome1,
     imageMobile:ImageCarrouselMobile1,
 
 
   },
-  {
+  { id:2,
     image:ImagenCarrouselHome2,
     imageMobile:ImageCarrouselMobile2,
   },
-  {
+  {   id:3,
       image:ImagenCarrouselHome3,
       imageMobile:ImageCarrouselMobile3,
   }
 ];
-
-const  CarrouselData = async ()=>{
-  const response = await fetch(`https://895165427322522:JLTxdNoO3tIiL88UWmcAcF5tgIE@api.cloudinary.com/v1_1/djn959kbs/resources/image`);
-  const content = await response.json();
-  const data = content
-
-  setCarrousel(data)
- }
 
 
 /** DATOS DE PAGINA CURSOS */
@@ -413,10 +414,26 @@ const Cursos=[
   }
 
 
+  /**   METATAGS */
+
+  const metatags = {
+    titleHome: "Skills - Instituto de inglés en Córdoba Argentina",
+    titleNosotros: 'Nosotros -Skills English Institute',
+    titleCursos:'Cursos -Skills English Institute',
+    titleAcademia:'Nosotros -Skills English Institute',
+    titleExamenes:'Exámenes -Skills English Institute',
+    titleContacto:'Contacto -Skills English Institute',
+    description : "Skills es un instituto de inglés situado en zona sur Córdoba, Argentina.",
+    viewport: 'user-scalable=no, width=device-width, initial-scale=1',
+    robots:'noindex',
+    googlebots:'',
+  }
+
+
 
 
  return <AcademiaContext.Provider value={{titleFooter,datos, menuItem, 
- contact, verde, rojoTipografia, cursosAdolescentes, cursosAdultos,cursosKiddies,slideData,Cursos, infoExamenes, CarrouselData,}}>
+ contact, verde, rojoTipografia, cursosAdolescentes, cursosAdultos,cursosKiddies,slideData,Cursos, infoExamenes,metatags}}>
                                            
     {children}
     </AcademiaContext.Provider>

@@ -81,13 +81,6 @@ const FormularioPrueba = () =>{
           }
 
           onSubmit={(values) => {
-              let valores ={
-                  name:values.name,
-                  lasName: values.lastName,
-                  email: values.email,
-                  phone: values.phone,
-                  message: values.message
-              }
               setLoading(true)
               sendEmail();
           }}

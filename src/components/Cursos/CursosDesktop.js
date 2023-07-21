@@ -1,11 +1,9 @@
 import React from "react";
-import { Grid, GridItem, Text,Image,Box ,Flex} from '@chakra-ui/react'
-import { useContext} from "react"
-import { AcademiaContext } from '../../context/context';
+import { Text} from '@chakra-ui/react'
 import CursosAdultos from "./CursosAdultos";
 const CursosDesktop = () => {
    /** tengo que hacer esta responsive */
-    const {verde, infoCursosAdultos, infoCursosNiños}= useContext(AcademiaContext);
+
     return(
 
         <>

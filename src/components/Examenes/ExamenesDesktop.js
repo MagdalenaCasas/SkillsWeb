@@ -1,6 +1,6 @@
 import React from "react";
 import { Box ,Flex} from '@chakra-ui/react'
-import { useContext, useState} from "react"
+import { useContext} from "react"
 import { AcademiaContext } from '../../context/context';
 import Card from "./Card"
 

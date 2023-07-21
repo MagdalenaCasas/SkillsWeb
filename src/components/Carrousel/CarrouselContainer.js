@@ -1,11 +1,10 @@
 import React from "react";
 import { Box, } from '@chakra-ui/react'
-import { useContext, useEffect} from "react"
+import { useContext} from "react"
 import { AcademiaContext } from '../../context/context';
 import ImageSlider from "./Imageslider";
 import { useMediaQuery } from '@chakra-ui/react'
 import ImageSliderMobile from "./ImageSliderMobile";
-import axios from "axios"
 
 
 

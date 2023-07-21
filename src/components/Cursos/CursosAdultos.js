@@ -1,5 +1,4 @@
 import React from "react";
-import { Box ,Flex} from '@chakra-ui/react'
 import { useContext} from "react"
 import { AcademiaContext } from '../../context/context';
 import CardInfo from "./CardInfo";
@@ -15,7 +14,7 @@ const CursosAdultos = () => {
          {Cursos.map(e=>{
           return(
             <>
-            <CardInfo element={e} card={e.cards}></CardInfo>
+            <CardInfo element={e} card={e.cards} key={e.id}></CardInfo>
             </>
           )
          })}

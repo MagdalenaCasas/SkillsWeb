@@ -8,7 +8,6 @@ import {
     MenuButton,
     MenuList,
     MenuItem,
-    MenuDivider,
   } from '@chakra-ui/react'
 
 
@@ -48,9 +47,11 @@ function MenuHamburguesa(){
         <Flex
         w={"100%"}
         h={"20%"}
+        key={item.id}
         >
 
        <MenuItem 
+
        background={item.background}
        border={item.border}
        color={item.color}

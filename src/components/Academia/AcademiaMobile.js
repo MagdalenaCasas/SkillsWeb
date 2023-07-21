@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Grid, GridItem, Text,Image,Box,Flex } from '@chakra-ui/react'
 import imgAcademia from "../../Imagenes/academiaImage.jpg"
 import banner from "../../Imagenes/BannerAcademiaMobile.png"

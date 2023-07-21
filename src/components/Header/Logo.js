@@ -1,9 +1,9 @@
 import React from 'react';
-import { Text, Image, Flex, Button,Link} from '@chakra-ui/react';
+import { Image, Flex, Button,Link} from '@chakra-ui/react';
 import logotipo from "../../Imagenes/logo.png"
 import { FaFacebookF} from "react-icons/fa"
 import { BsInstagram } from "react-icons/bs"
-import {BsWhatsapp} from "react-icons/bs"
+import { BsLinkedin } from "react-icons/bs"
 
 
 
@@ -28,14 +28,15 @@ function Logo (){
         <Link 
         justifySelf={"flex-end"}
         href='https://www.facebook.com/Skillsinstitute'
+        target='_blank'
         >
         < Button leftIcon={<FaFacebookF />} border={"none"} background={"none"} justifySelf={"flex-end"} cursor={"pointer"} /> 
         </Link>
-        <Link href='https://www.instagram.com/skillsenglishinstitute/'>
+        <Link href='https://www.instagram.com/skillsenglishinstitute/'target='_blank'>
         < Button leftIcon={<BsInstagram  />} border={"none"} background={"none"} justifySelf={"flex-end"} cursor={"pointer"} /> 
         </Link>
-        <Link href='https://wa.me/message/6UZBQXQCSJLVD1'>
-        < Button leftIcon={< BsWhatsapp />} border={"none"} background={"none"} justifySelf={"flex-end"} cursor={"pointer"} /> 
+        <Link href='https://www.linkedin.com/company/skillsenglishinstitute/' target='_blank'>
+        < Button leftIcon={< BsLinkedin />} border={"none"} background={"none"} justifySelf={"flex-end"} cursor={"pointer"} /> 
         </Link>
        </Flex>
     

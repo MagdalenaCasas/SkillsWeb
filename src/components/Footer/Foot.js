@@ -29,8 +29,8 @@ function Foot (){
               rowGap={"20px"} 
               columnGap={"100px"} 
               >
-                {titleFooter.map(titulo=>{return(<GridItem gridRow={titulo.gridRow} color={titulo.color} fontWeight={titulo.fontWeigth} fontSize={["2px","10px","12px"]} >{titulo.text}</GridItem>)})}
-                {datos.map(dato=>{return( <GridItem gridRow={dato.gridRow} fontSize={["8px","12px","16px"]}><Link textDecoration={dato.textDecoration} color={dato.color} href={dato.href}>{dato.text}</Link></GridItem>)})}
+                {titleFooter.map(titulo=>{return(<GridItem gridRow={titulo.gridRow} key={titulo.id} color={titulo.color} fontWeight={titulo.fontWeigth} fontSize={["2px","10px","12px"]} >{titulo.text}</GridItem>)})}
+                {datos.map(dato=>{return( <GridItem gridRow={dato.gridRow} key={dato.id} fontSize={["8px","12px","16px"]}><Link textDecoration={dato.textDecoration} color={dato.color} href={dato.href} target={dato.target}>{dato.text}</Link></GridItem>)})}
             </Grid>
            
 

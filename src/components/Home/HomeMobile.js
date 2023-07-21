@@ -1,8 +1,7 @@
 import React from "react";
-import { Grid, GridItem, Text,Flex, Image,Link,Button,Box } from '@chakra-ui/react'
-import home1 from "../../Imagenes/home_1.png"
-import home2 from "../../Imagenes/home_2.png"
-import home3 from "../../Imagenes/home_3.png"
+import { Grid, GridItem, Text,Flex} from '@chakra-ui/react'
+import Boton from "../SIn Uso/Button";
+import whatsApp from "../../Imagenes/whatsapp.png"
 import CardCursosMobile from "./CardCursosMobile";
 import { useContext} from "react"
 import { AcademiaContext } from '../../context/context';
@@ -25,6 +24,7 @@ const HomeMobile = () => {
     marginTop={"3%"}
     >
       <CarrouselContainer></CarrouselContainer>
+      <Boton className={"botonWp"} image={whatsApp} link={'https://wa.me/message/6UZBQXQCSJLVD1'} ></Boton>
 
     <Text
     fontSize={"20px"}

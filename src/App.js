@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import { Routes, Route,} from 'react-router-dom';
 import {
   Home,Academy,Courses,Exam,Contact
 } from './pages/index';

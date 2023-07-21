@@ -1,7 +1,8 @@
 import React from "react";
-import { Grid, GridItem, Text,Flex, Image } from '@chakra-ui/react'
+import { Grid, GridItem, Text} from '@chakra-ui/react'
 import IframeFunction from "./Iframe"
-import imgContacto from "../../Imagenes/imgContacto.png"
+import Boton from "../SIn Uso/Button";
+import whatsApp from "../../Imagenes/whatsapp.png"
 import ContactCard from "./ContactCard";
 import FormularioPrueba from "../Form/Form";
 import { useContext} from "react"
@@ -22,6 +23,7 @@ const ContactCardRes = () => {
       marginBottom={"3%"}
       paddingTop={"45%"}
       >Para consultas, contactanos</Text>
+       <Boton className={"botonWp"} image={whatsApp} link={'https://wa.me/message/6UZBQXQCSJLVD1'} ></Boton>
       <Grid
   
       templateColumns='0% 100% 0%'

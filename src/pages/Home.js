@@ -1,14 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext} from "react";
 import HomeResponsive from "../components/Home/HomeResponsive";
-import { Fade, ScaleFade, Slide, SlideFade, Box } from '@chakra-ui/react'
+import Metatags from '../components/Metatags'
+import { Box } from '@chakra-ui/react'
+import { AcademiaContext } from "../context/context";
+
 
 const HomePage = () => {
-
+  const {metatags}= useContext(AcademiaContext);
   
     return (
+      <>
+      <Metatags title={metatags.titleHome} description={metatags.description}></Metatags>
      <Box className="fade tipo">
        <HomeResponsive></HomeResponsive>
      </Box>
+      </>
     );
   };
   export default HomePage;

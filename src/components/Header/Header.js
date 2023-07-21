@@ -21,6 +21,7 @@ function Header(){
     position={"fixed"}
     zIndex={"5"}
     w={"100%"}
+    top={"0"}
     background={"white"}
     marginTop={margin}
     >
