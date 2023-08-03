@@ -18,7 +18,7 @@ const ContactCardContainer = () => {
     const {verde}= useContext(AcademiaContext);
     return(
     <Box
-    marginBottom={"15%"}
+    marginBottom={"5%"}
     >
     <Text
     align={"center"}
@@ -29,30 +29,25 @@ const ContactCardContainer = () => {
     >Para consultas, contactanos</Text>
      <Boton className={"botonWp"} image={whatsApp} link={'https://wa.me/message/6UZBQXQCSJLVD1'} ></Boton>
     <Grid
-
     templateColumns='10% 80% 10%'
-    h={"100vh"}
-    marginBottom={"3%"}
     >
-     <GridItem h={"100vh"} ></GridItem>
+     <GridItem></GridItem>
 
-     <GridItem h={"100vh"}>
+     <GridItem>
      <Grid templateColumns='repeat(2, 1fr)' gap={6}>
-       <GridItem h={"55vh"}  backgroundColor={verde}>
+       <GridItem h={"65vh"}  backgroundColor={verde}>
         <ContactCard></ContactCard>
        </GridItem>
-       <GridItem h={"55vh"}>
+       <GridItem h={"65vh"}>
         <Image src={imgContacto} h={"100%"} w={"100%"}></Image>
         </GridItem>
-       <GridItem h={"55vh"}  align={"center"} >
+       <GridItem h={"65vh"}  align={"center"} >
           <IframeFunction></IframeFunction>
        </GridItem>
-       <GridItem h={"55vh"}  backgroundColor={"white"} > <FormularioPrueba></FormularioPrueba> </GridItem>
+       <GridItem h={"65vh"}  backgroundColor={"white"}  > <FormularioPrueba></FormularioPrueba> </GridItem>
      </Grid>
       </GridItem>
-
-
-     <GridItem h={"100vh"}  ></GridItem>
+     <GridItem ></GridItem>
   </Grid>
     </Box>
 

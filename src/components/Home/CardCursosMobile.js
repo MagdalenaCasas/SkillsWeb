@@ -12,6 +12,7 @@ function CardCursosMobile ({element}){
      justifyContent={"center"}
      alignItems={"center"}
      margin={"10px"}
+     paddingBottom={"20%"}
      >   
         <Text margin={"8%"} 
         color={"white"} 
@@ -41,6 +42,7 @@ function CardCursosMobile ({element}){
          marginTop={"10%"}
          w={"100%"}
          h={"100%"}
+         marginBottom={"10%"}
         >ver más</Button>
       </Link>
      </Flex>

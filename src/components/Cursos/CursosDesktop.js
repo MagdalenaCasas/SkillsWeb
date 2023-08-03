@@ -13,6 +13,7 @@ const CursosDesktop = () => {
         fontSize={"36px"}
         fontWeight={"bold"}
         className="cursos"
+        marginTop={"5%"}
         >Cursos disponibles</Text>
 
         <CursosAdultos></CursosAdultos>

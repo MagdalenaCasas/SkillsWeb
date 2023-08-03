@@ -17,6 +17,7 @@ const ExamenesMobile = () => {
       <>
         <Flex
         justifyContent={"center"}
+        marginTop={"15%"}
         >
           <Box
           w={"90%"}

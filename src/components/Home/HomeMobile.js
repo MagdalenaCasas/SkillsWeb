@@ -21,7 +21,7 @@ const HomeMobile = () => {
     flexDirection={"column"}
     justifyContent={"center"}
     alignItems={"center"}
-    marginTop={"3%"}
+    marginTop={"15%"}
     >
       <CarrouselContainer></CarrouselContainer>
       <Boton className={"botonWp"} image={whatsApp} link={'https://wa.me/message/6UZBQXQCSJLVD1'} ></Boton>
@@ -54,13 +54,13 @@ const HomeMobile = () => {
      <Grid templateColumns='1fr' gap={6}>
 
 
-     <GridItem h={"40vh"} backgroundColor={verde} >
+     <GridItem  backgroundColor={verde} >
        <CardCursosMobile element={cursosKiddies}></CardCursosMobile>
        </GridItem>
-       <GridItem h={"40vh"} backgroundColor={verde} >
+       <GridItem backgroundColor={verde} >
         <CardCursosMobile element={cursosAdolescentes}></CardCursosMobile>
         </GridItem>
-       <GridItem h={"40vh"} backgroundColor={verde} >
+       <GridItem backgroundColor={verde} >
        <CardCursosMobile element={cursosAdultos}></CardCursosMobile>
        </GridItem>
      </Grid>

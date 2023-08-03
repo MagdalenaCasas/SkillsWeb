@@ -15,11 +15,11 @@ function Logo (){
    <Flex
    justifyContent={"space-between"}
    alignContent={"center"}
-    background={"white"}
+   background={"white"}
     w={"100vw"}
    >
       <Flex></Flex>
-       <Image src={logotipo} width={"200px"} height={"100px"} ></Image>
+       <Image src={logotipo} width={"200px"} height={"100px"} marginTop={"10px"} ></Image>
      
        <Flex
        marginRight={"2%"}
@@ -30,13 +30,13 @@ function Logo (){
         href='https://www.facebook.com/Skillsinstitute'
         target='_blank'
         >
-        < Button leftIcon={<FaFacebookF />} border={"none"} background={"none"} justifySelf={"flex-end"} cursor={"pointer"} /> 
+        < Button leftIcon={<FaFacebookF />} border={"none"} background={"none"} justifySelf={"flex-end"} cursor={"pointer"} color={"black"} /> 
         </Link>
         <Link href='https://www.instagram.com/skillsenglishinstitute/'target='_blank'>
-        < Button leftIcon={<BsInstagram  />} border={"none"} background={"none"} justifySelf={"flex-end"} cursor={"pointer"} /> 
+        < Button leftIcon={<BsInstagram  />} border={"none"} background={"none"} justifySelf={"flex-end"} cursor={"pointer"} color={"black"} /> 
         </Link>
         <Link href='https://www.linkedin.com/company/skillsenglishinstitute/' target='_blank'>
-        < Button leftIcon={< BsLinkedin />} border={"none"} background={"none"} justifySelf={"flex-end"} cursor={"pointer"} /> 
+        < Button leftIcon={< BsLinkedin />} border={"none"} background={"none"} justifySelf={"flex-end"} cursor={"pointer"} color={"black"}/> 
         </Link>
        </Flex>
     

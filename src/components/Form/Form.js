@@ -80,7 +80,7 @@ const FormularioPrueba = () =>{
             values()
           }
 
-          onSubmit={(values) => {
+          onSubmit={() => {
               setLoading(true)
               sendEmail();
           }}
@@ -97,7 +97,7 @@ const FormularioPrueba = () =>{
             fontSize={"13px"}
             >
                 <Text
-                fontSize={["20px","20px","24px"]}
+                fontSize={"16px"}
                 fontWeight={"bold"}
                 color={"#bb2423"}
                 > También podés dejarnos tu mensaje</Text>

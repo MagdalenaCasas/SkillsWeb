@@ -17,7 +17,7 @@ const ContactCardRes = () => {
       <>
       <Text
       align={"center"}
-      fontSize={"30px"}
+      fontSize={"20px"}
       margin={0}
       marginTop={"4%"}
       marginBottom={"3%"}

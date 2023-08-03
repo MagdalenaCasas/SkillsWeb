@@ -43,6 +43,7 @@ function CardCursosHome ({element}){
          marginTop={"10%"}
          w={"100%"}
          h={"100%"}
+         marginBottom={"5%"}
         >ver más</Button>
       </Link>
      </Flex>
