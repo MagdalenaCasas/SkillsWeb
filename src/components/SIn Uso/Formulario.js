@@ -20,7 +20,7 @@ function ContactForm(){
     emailjs.sendForm('service_mehkolc', 'template_qjfohbs', form.current, 'qn8kY7IlwwgeLhLvp')
       .then((result) => {
           console.log(result.text);
-          confirmation('tu consulta ha sido enviadda con exito éxito.');
+          confirmation('Tu consulta ha sido enviada con éxito.');
           setLoading(false);
       }, (error) => {
           console.log(error.text);

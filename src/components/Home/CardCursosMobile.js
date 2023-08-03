@@ -1,5 +1,6 @@
 import React from 'react';
-import { Flex, Text,Button, Link} from '@chakra-ui/react';
+import { Flex, Text} from '@chakra-ui/react';
+import { NavLink } from 'react-router-dom'; // Importar NavLink desde react-router-dom
 
 function CardCursosMobile ({element}){
    /** ESTA FUNCION ES UN COMPONENTE CARD QUE LLENA LOS DATOS DEL CUADRADO VERDE DE HOME */
@@ -29,22 +30,14 @@ function CardCursosMobile ({element}){
         align={"center"}
         lineHeight={"25px"}
         fontSize={"12px"}>{element.value}</Text>
-      <Link
-      cursor={"pointer"}
-      w={"50%"}
-      h={"8%"}
-      textDecoration={"none"}
-      href={"./cursos"}> 
-       <Button
-         background={"#bb2423"}
-         color={"white"}
-         border={"none"}
-         marginTop={"10%"}
-         w={"100%"}
-         h={"100%"}
-         marginBottom={"10%"}
-        >ver más</Button>
-      </Link>
+        
+        <NavLink
+            exact
+            to={'/cursos'} // Asegurarse de utilizar el atributo "to" en lugar de "href"
+            className={'botonHome'}
+            >
+            {'ver mas'}
+          </NavLink>
      </Flex>
   )
 }

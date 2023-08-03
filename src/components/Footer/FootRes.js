@@ -1,7 +1,8 @@
 import React from 'react';
 import { useContext} from "react"
-import { Flex, Link,  Grid, GridItem } from '@chakra-ui/react';
+import { Flex, Grid, GridItem } from '@chakra-ui/react';
 import { AcademiaContext } from '../../context/context';
+import { NavLink } from 'react-router-dom'; // Importar NavLink desde react-router-dom
 function FooterRes (){
   const {titleFooter, datos, verde}= useContext(AcademiaContext);
 
@@ -20,7 +21,7 @@ function FooterRes (){
               w={"100%"}
               >
                 {titleFooter.map(titulo=>{return(<GridItem gridRow={titulo.gridRow} key={titulo.id} color={titulo.color} fontSize={["6px","8px","10px"]} fontWeight={titulo.fontWeigth} >{titulo.text}</GridItem>)})}
-                {datos.map(dato=>{return( <GridItem gridRow={dato.gridRow} key={dato.id}fontSize={["8px","10px"]}><Link textDecoration={dato.textDecoration} color={dato.color} href={dato.href}>{dato.text}</Link></GridItem>)})}
+                {datos.map(dato=>{return( <GridItem gridRow={dato.gridRow} key={dato.id}fontSize={["8px","10px"]}><NavLink exacto to={dato.href} target={dato.target} className={"linkFooter"}>{dato.text}</NavLink></GridItem>)})}
             </Grid>
            
 

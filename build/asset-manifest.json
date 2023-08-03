@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5e2e798.css",
-    "main.js": "/static/js/main.2f18e3e6.js",
+    "main.css": "/static/css/main.5301639f.css",
+    "main.js": "/static/js/main.2b719ef1.js",
     "static/media/carrousel2.png": "/static/media/carrousel2.606b75733b5c1af22fe5.png",
     "static/media/home_2.png": "/static/media/home_2.1435987c646c4e2318a8.png",
     "static/media/BannerAcademiaMobile.png": "/static/media/BannerAcademiaMobile.877e1cf73bc5f3439ee3.png",
@@ -48,11 +48,11 @@
     "static/media/roboto-vietnamese-400-normal.woff2": "/static/media/roboto-vietnamese-400-normal.3230f9b040f3c630e0c3.woff2",
     "static/media/roboto-greek-ext-400-normal.woff2": "/static/media/roboto-greek-ext-400-normal.169619821ea93019d1bb.woff2",
     "index.html": "/index.html",
-    "main.d5e2e798.css.map": "/static/css/main.d5e2e798.css.map",
-    "main.2f18e3e6.js.map": "/static/js/main.2f18e3e6.js.map"
+    "main.5301639f.css.map": "/static/css/main.5301639f.css.map",
+    "main.2b719ef1.js.map": "/static/js/main.2b719ef1.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5e2e798.css",
-    "static/js/main.2f18e3e6.js"
+    "static/css/main.5301639f.css",
+    "static/js/main.2b719ef1.js"
   ]
 }

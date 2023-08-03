@@ -43,7 +43,7 @@ const FormularioPrueba = () =>{
         emailjs.sendForm('service_mc3qptc', 'template_nw4p8or', form.current, 'ca79kyCGdd9UmSNLG')
           .then((result) => {
               console.log(result.text);
-              confirmation('tu consulta ha sido enviadda con exito éxito.');
+              confirmation('Tu consulta ha sido enviada con éxito.');
               setLoading(false);
           }, (error) => {
               console.log(error.text);

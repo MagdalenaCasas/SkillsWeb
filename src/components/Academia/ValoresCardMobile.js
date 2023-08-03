@@ -58,7 +58,7 @@ function ValoresCardMobile (){
     Skills es una institución que contiene.<br></br>
     Skills es una institución solidaria.<br></br>
     Skills es formador de personas.<br></br>
-    Skills capacita a sus colaboradores <br></br>
+    Skills capacita a sus colaboradores. <br></br>
     Skills es familia.
     </Text>
 

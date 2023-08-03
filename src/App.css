@@ -15,6 +15,24 @@
   margin-bottom: 10px;
 }
 
+.botonHome{
+  color:white;
+  text-decoration: none;
+  border:none;
+  background-color:#bb2423;
+  width: 25%;
+  height: 10%;
+  margin-top: 5%;
+  text-align: center;
+  padding-top: 3%;
+  cursor: pointer;
+
+}
+.linkFooter{
+  color:white;
+  text-decoration: none;
+}
+
 @media (max-width:700px) {
   .cursos{
     padding-top: 20%;

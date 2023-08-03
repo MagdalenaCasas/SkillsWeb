@@ -1,9 +1,10 @@
 import React from 'react';
 import { useContext} from "react"
-import { Flex, Link, Image } from '@chakra-ui/react';
+import { Flex,Image } from '@chakra-ui/react';
 import { Grid, GridItem } from '@chakra-ui/react'
 import logotipo from "../../Imagenes/LogoFooter.png"
 import { AcademiaContext } from '../../context/context';
+import { NavLink } from 'react-router-dom'; // Importar NavLink desde react-router-dom
 function Foot (){
   const {titleFooter, datos, verde}= useContext(AcademiaContext);
 
@@ -30,7 +31,7 @@ function Foot (){
               columnGap={"100px"} 
               >
                 {titleFooter.map(titulo=>{return(<GridItem gridRow={titulo.gridRow} key={titulo.id} color={titulo.color} fontWeight={titulo.fontWeigth} fontSize={["2px","10px","12px"]} >{titulo.text}</GridItem>)})}
-                {datos.map(dato=>{return( <GridItem gridRow={dato.gridRow} key={dato.id} fontSize={["8px","12px","16px"]}><Link textDecoration={dato.textDecoration} color={dato.color} href={dato.href} target={dato.target}>{dato.text}</Link></GridItem>)})}
+                {datos.map(dato=>{return( <GridItem gridRow={dato.gridRow} key={dato.id} fontSize={["8px","12px","16px"]}><NavLink exacto to={dato.href} target={dato.target} className={"linkFooter"}>{dato.text}</NavLink></GridItem>)})}
             </Grid>
            
 
