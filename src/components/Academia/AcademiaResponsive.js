@@ -7,7 +7,7 @@ import AcademiaMobile from "./AcademiaMobile";
 
 function AcademiaResponsive(){
     /** ESTA FUNCION SE EXPORTA AL APP.JS  TIENE MEDIA QUERY*/
-    const [isLargerThan600] = useMediaQuery('(min-width: 700px)')
+    const [isLargerThan600] = useMediaQuery('(min-width: 600px)')
 
     if(isLargerThan600){
         return(<AcademiaDesktop></AcademiaDesktop>)

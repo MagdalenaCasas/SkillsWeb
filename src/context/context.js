@@ -197,7 +197,8 @@ const menuItem = [
       textdecoration: "none",
       background: "none",
       border: "none",
-      href: "./"
+      href: "./",
+      target: ''
     },
     { 
       id:2,
@@ -206,7 +207,8 @@ const menuItem = [
       textdecoration: "none",
       background: "none",
       border: "none",
-      href: "./academia"
+      href: "./academia",
+      target: ''
     },
     { 
       id:3,
@@ -215,7 +217,8 @@ const menuItem = [
       background: "none",
       textdecoration: "none",
       border: "none",
-      href: "./cursos"
+      href: "./cursos",
+      target: ''
     },
     { 
       id:4,
@@ -224,7 +227,8 @@ const menuItem = [
       background: "none",
       textdecoration: "none",
       border: "none",
-      href: "./examenes"
+      href: "./examenes",
+      target: ''
     },
     { 
       id:5,
@@ -233,7 +237,8 @@ const menuItem = [
       background: "none",
       textdecoration: "none",
       border: "none",
-      href: "./contacto"
+      href: "./contacto",
+      target: ''
     },
     { 
       id:6,
@@ -242,7 +247,8 @@ const menuItem = [
       background: "none",
       textdecoration: "none",
       border: "none",
-      href: "https://forms.gle/8DdqiZSTjQaHsMHw7"
+      href: "https://forms.gle/8DdqiZSTjQaHsMHw7",
+      target: '_blank'
     }
 ]
 

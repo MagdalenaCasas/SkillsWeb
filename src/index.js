@@ -1,19 +1,34 @@
 import React from 'react';
-import { hydrate, render } from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import { AcademiaContextProvider } from './context/context';
 import './index.css';
 
-const rootElement = document.getElementById('root');
-const app = (
-    <BrowserRouter>
-     <AcademiaContextProvider>
-        <App />
-     </AcademiaContextProvider>
-    </BrowserRouter>
-);
+ReactDOM.render(
+    <React.StrictMode>
+        <Router>
+            <AcademiaContextProvider>
+                <App />
+            </AcademiaContextProvider>
+        </Router>
+    </React.StrictMode>,
+  document.getElementById("root")
+)
 
-rootElement.hasChildNodes()
+/* const rootElement = document.getElementById('root');
+const app = (
+    <React.StrictMode>
+        <BrowserRouter>
+    <AcademiaContextProvider>
+        <App />
+    </AcademiaContextProvider>
+    </BrowserRouter>
+    </React.StrictMode>
+    
+); */
+
+/* rootElement.hasChildNodes()
     ? hydrate(app, rootElement)
     : render(app, rootElement);
+ */

@@ -9,8 +9,13 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.menuHamb{
+  color:white;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
 @media (max-width:700px) {
-  
   .cursos{
     padding-top: 20%;
   }

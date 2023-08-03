@@ -1,5 +1,4 @@
 import React from 'react';
-
 import HomePage from "./Home";
 import AcademiaPage from "./Academia";
 import CursosPage from "./Cursos";
