@@ -19,7 +19,7 @@ function ItemBox ({element}){
         >
             <Image src={element.img} w={"20px"}marginRight={"5px"}></Image>
         </Flex>
-        <Text color={"white"} marginTop={"5px"} w={"70%"} align={"center"} fontSize={"12px"}>{element.value}</Text>
+        <Text color={"white"} marginTop={"5px"} w={"70%"} align={"center"} fontSize={"12px"}>{element.value}<br></br>{element.text2}</Text>
      </Flex>
   )
 }

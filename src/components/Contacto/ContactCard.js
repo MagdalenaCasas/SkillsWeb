@@ -30,7 +30,7 @@ function ContactCard (){
      <Grid templateColumns='repeat( 1fr)' gap={0}>
       {contact.map(item =>{
         return( 
-        <GridItem w='100%' h='8vh'>
+        <GridItem w='100%' h='8vh' marginBottom={"3%"}>
           <ItemBox element={item} key={item.id}></ItemBox>
         </GridItem>)
       })}
@@ -42,7 +42,6 @@ function ContactCard (){
    fontSize={"10px"}
    color={"white"}
    margin={0}
-   marginBottom={"3%"}
    marginTop={"5%"}
    >SEGUINOS EN NUESTRAS REDES</Text>
    <Text
@@ -51,6 +50,7 @@ function ContactCard (){
    color={"white"}
    fontWeight={"bold"}
    margin={0}
+   marginBottom={"10%"}
    >@SkillsEnglishInstitute</Text>
    </>
   )

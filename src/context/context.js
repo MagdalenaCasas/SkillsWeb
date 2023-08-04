@@ -270,7 +270,8 @@ const contact = [
   },
   {
     title: "HORARIOS",
-    value: "Desde febrero a diciembre, las oficinas están abiertas de 14:30hs a 19:00hs",
+    value: `Febrero y marzo de 9.00 a 20.00 hs `,
+    text2:`Abril a diciembre de 14.00 a 20.00 hs`,
     color:"white",
     src: "horarios",
     img: clockIcon
@@ -397,7 +398,7 @@ const Cursos=[
     id: 3,
     title: "Cursos para adultos",
     text: ` Nunca es tarde para empezar. Estos cursos están pensados para alumnos de 18 años en adelante que quieran aprender o mejorar sus habilidades de inglés. Se dictan una vez por semana y cada clase tiene una duración de dos horas.
-    Contamos con diferentes cursos tales como: básico, pre-intermedio, intermedio y cursos internacionales.
+    Contamos con diferentes cursos tales como: básico, pre-intermedio, intermedio y preparación para exámenes internacionales.
     `,
     cards:[]
   }
